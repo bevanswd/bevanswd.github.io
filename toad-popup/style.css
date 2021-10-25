@@ -1,0 +1,131 @@
+/* 
+====== 3d unfold ======
+*/
+/* start state */
+/* animate in */
+/* animate out */
+
+.mfp-3d-unfold .mfp-content {
+  perspective: 2000px;
+}
+.mfp-3d-unfold .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateY(-60deg);
+}
+.mfp-3d-unfold.mfp-bg {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.mfp-3d-unfold.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.mfp-3d-unfold.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-3d-unfold.mfp-removing .mfp-with-anim {
+  transform: rotateY(60deg);
+  opacity: 0;
+}
+.mfp-3d-unfold.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+.mfp-close {
+  background: #dadada !important;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  opacity: 1;
+  text-shadow: none;
+  color: #000521;
+  line-height: 0 !important;
+  margin: 6px;
+}
+
+
+
+/*MODAL*/
+
+.modal-content {
+  position: relative;
+  border: 1px solid #0ff0f9;
+  background: #0a0e29;
+  border-radius: 10px;
+  padding: 15px;
+  width: auto;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.modal-body {
+  max-height: calc(100vh - 100px);
+  overflow: auto;
+  padding: 15px;
+  position: relative;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+#calc-popup .table > thead > tr > th {
+  font-size: 14px;
+  font-weight: bold;
+  color: #749BD8;
+  border-bottom: 0 !important;
+}
+#calc-popup .table > tbody > tr > td {
+  background: transparent;
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 14px;
+  color: #0FF0F9;
+}
+#calc-popup .table thead th:not(:first-child), 
+#calc-popup .table tbody tr td:not(:first-child) {
+  text-align: right;
+}
+.modal-header {
+  background: #0a0e29;
+  padding: 0;
+  padding-right: 15px;
+  border-bottom: 1px solid #0ff0f9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.modal-header h4 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 48px;
+  color: #0ff0f9;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+/*MODAL TABLE*/
+
+.notifications ul {
+  list-style: none;
+  padding: 0;
+}
+.notifications ul li {
+  display: table-cell;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0FF0F9;
+  padding: 3px;
+  text-align: center;
+  vertical-align: text-top;
+}
+.icon-in {
+  transform: scale(0);
+  transition: all 1s;
+}
+.icon-in.animate {
+  transform: scale(1.3);
+}

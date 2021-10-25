@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+    <ul id="inline-popups">
+      <li><a href="#calc-popup" data-effect="mfp-3d-unfold">ROI Calculator</a></li>
+    </ul>
+
+    <!-- Popup itself -->
+    <div id="calc-popup" class="modal-content mfp-with-anim mfp-hide">
+      
+        <div class="modal-header">
+            <h4 class="modal-title">ROI</h4>
+        </div>
+        <div class="modal-body">
+            <div class="">
+                <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th>TIME FRAME</th>
+                        <th>ROI</th>
+                        <th>TOAD PER 1000$</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1d</td>
+                            <td>0.06%</td>
+                            <td>0.28434908</td>
+                        </tr>
+                        <tr>
+                            <td>7d</td>
+                            <td>0.43%</td>
+                            <td>1.99411353</td>
+                        </tr>
+                        <tr>
+                            <td>30d</td>
+                            <td>1.86%</td>
+                            <td>8.60685274</td>
+                        </tr>
+                        <tr>
+                            <td>365d</td>
+                            <td>25.11%</td>
+                            <td>116.29659598</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="notifications">
+                    <ul>
+                        <li><i class="fas fa-angle-double-down icon-in"></i><br>ROI based on current rates (compounded).</li>
+                        <li><i class="fas fa-angle-double-down icon-in"></i><br>All figures are estimates only.</li>
+                        <li><i class="fas fa-angle-double-down icon-in"></i><br>Estimated rates do not include fees.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      
+    </div> 
+    
+    <!-- prefix -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+    <script  src="./script.js"></script>
+  </body>
+
+</html>
