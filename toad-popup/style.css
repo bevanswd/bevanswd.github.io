@@ -115,6 +115,9 @@
 }
 
 /*MODAL TABLE*/
+.notifications ul {
+  padding: 0;
+}
 .notifications ul li {
   font-size: 14px;
   line-height: 20px;
