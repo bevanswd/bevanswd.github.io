@@ -33,15 +33,17 @@
   opacity: 0;
 }
 .mfp-close {
-  background: #dadada !important;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
+  background: rgb(29, 247, 109, 0.2) !important;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 25%;
   opacity: 1;
   text-shadow: none;
-  color: #000521;
+  color: rgb(29, 247, 109) !important;
   line-height: 0 !important;
-  margin: 6px;
+  margin: 7px;
+  border: 1px solid rgb(29, 247, 109) !important;
 }
 
 
@@ -50,8 +52,8 @@
 
 .modal-content {
   position: relative;
-  border: 1px solid #0ff0f9;
-  background: #0a0e29;
+  border: 1px solid rgb(29, 247, 109);;
+  background: rgb(11, 36, 41);
   border-radius: 10px;
   padding: 15px;
   width: auto;
@@ -74,7 +76,7 @@
 #calc-popup .table > thead > tr > th {
   font-size: 14px;
   font-weight: bold;
-  color: #749BD8;
+  color: rgb(170, 235, 231);
   border-bottom: 0 !important;
 }
 #calc-popup .table > tbody > tr > td {
@@ -82,17 +84,22 @@
   font-weight: bold;
   line-height: 25px;
   font-size: 14px;
-  color: #0FF0F9;
+  color: rgb(29, 247, 109);
+}
+#calc-popup .modal-body .table > tbody > tr:nth-child(2n+2) {
+  background: rgb(5, 16, 18);
+}
+#calc-popup .modal-body .table > tbody > tr:nth-child(2n+1) {
+  background: rgba(29, 247, 109, 0.03);
 }
 #calc-popup .table thead th:not(:first-child), 
 #calc-popup .table tbody tr td:not(:first-child) {
   text-align: right;
 }
 .modal-header {
-  background: #0a0e29;
   padding: 0;
   padding-right: 15px;
-  border-bottom: 1px solid #0ff0f9;
+  border-bottom: 1px solid rgb(29, 247, 109);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -100,7 +107,7 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 48px;
-  color: #0ff0f9;
+  color: rgb(29, 247, 109);
   padding-left: 15px;
   display: flex;
   align-items: center;
@@ -108,19 +115,14 @@
 }
 
 /*MODAL TABLE*/
-
-.notifications ul {
-  list-style: none;
-  padding: 0;
-}
 .notifications ul li {
-  display: table-cell;
   font-size: 14px;
-  line-height: 18px;
-  color: #0FF0F9;
+  line-height: 20px;
+  color: rgb(29, 247, 109);
   padding: 3px;
   text-align: center;
-  vertical-align: text-top;
+  margin-bottom: -25px;
+  list-style: inside;
 }
 .icon-in {
   transform: scale(0);
